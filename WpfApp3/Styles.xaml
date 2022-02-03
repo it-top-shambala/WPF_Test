@@ -1,0 +1,44 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="Style_Default" TargetType="FrameworkElement">
+        <Setter Property="Margin" Value="5"/>
+    </Style>
+    
+    <Style x:Key="Style_Title" TargetType="Label"
+           BasedOn="{StaticResource Style_Default}">
+        <Setter Property="FontSize" Value="45"/>
+        <Setter Property="Foreground" Value="Red"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+    
+    <Style x:Key="Style_Default_Input" TargetType="Control"
+           BasedOn="{StaticResource Style_Default}">
+        <Setter Property="FontSize" Value="20"/>
+    </Style>
+    <Style x:Key="Style_Label_Input" TargetType="Label"
+           BasedOn="{StaticResource Style_Default_Input}">
+        <Setter Property="Foreground" Value="DarkBlue"/>
+        <Setter Property="Width" Value="150"/>
+    </Style>
+    <Style x:Key="Style_Input" TargetType="TextBox"
+           BasedOn="{StaticResource Style_Default_Input}">
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="Width" Value="200"/>
+    </Style>
+    
+    <Style x:Key="Style_Default_Button" TargetType="Button"
+           BasedOn="{StaticResource Style_Default}">
+        <Setter Property="Width" Value="75"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+    <Style x:Key="Style_Button_Clear" TargetType="Button"
+           BasedOn="{StaticResource Style_Default_Button}">
+        <Setter Property="Background" Value="Red"/>
+    </Style>
+    <Style x:Key="Style_Button_Save" TargetType="Button"
+           BasedOn="{StaticResource Style_Default_Button}">
+        <Setter Property="Background" Value="Green"/>
+    </Style>
+</ResourceDictionary>
